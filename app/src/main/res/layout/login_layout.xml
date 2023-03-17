@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/book" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/idEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insira seu E-mail"
+            app:endIconMode="clear_text"
+            app:startIconContentDescription="Insira seu E-mail"
+            app:startIconDrawable="@drawable/baseline_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/idSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insira sua senha"
+            app:endIconMode="password_toggle"
+            app:startIconContentDescription="Insira sua senha"
+            app:startIconDrawable="@drawable/baseline_key">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Esqueceu sua senha?"
+            android:textColor="#4454AF"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEntrar"
+                style="@style/ShapeAppearanceOverlay.Material3.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:text="Entrar" />
+
+            <Button
+                android:id="@+id/btnSair"
+                style="@style/ShapeAppearanceOverlay.Material3.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:text="Sair" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
